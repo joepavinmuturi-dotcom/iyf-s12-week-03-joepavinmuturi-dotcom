@@ -43,8 +43,17 @@
 - `ls -R my-awesome-app` - checked that all folders and files were created
 - Ran the script with no name - printed the Usage message and exited
 
-### What the script does
+## What the script does
 - `$1` holds the project name I type after the script name
 - `[ -z "$PROJECT_NAME" ]` checks whether the name is empty
 - `mkdir -p` creates the nested folders in one command
 - `echo "# $PROJECT_NAME" > README.md` writes a heading into the README
+
+## git basics
+- `git status` - checked what had changed
+- `git add styles.css` - staged my CSS change
+- `git commit -m "Style: add navigation hover underline"` - committed the hover style
+- `git add styles.css` - staged my second CSS change
+- `git commit -m "Fix: correct responsive breakpoint for projects grid"` - committed the breakpoint fix
+- `git log --oneline` - listed my commits in short form
+- `git push` - uploaded my commits to GitHub
